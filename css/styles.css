@@ -1,0 +1,185 @@
+/* #212121; - основний текст */
+/* #757575; - підписи */
+/* лого - #000000 #2196F3; */
+:root{
+  --title-text-color: #212121;
+  --primary-text-color:#757575;
+  --accent-color: #2196F3;
+  --second-accent-color:#F5F4FA;
+}
+body{
+   font-family: roboto, sans-serif;
+   font-size: 14px;
+   color: #212121;
+   font-weight: 400;
+   text-decoration: none;
+  
+}
+ .web{
+    color:var(--accent-color);
+    font-family: raleway;
+   font-size: 26px;
+   letter-spacing: 0.78px;
+   font-weight: 700;
+   
+ }
+ .studio{
+    color:black;
+   font-family: raleway;
+   font-size: 26px;
+   letter-spacing: 0.78px;
+   font-weight: 700;
+
+ }
+ 
+ .nav{
+    font-weight: 500;
+   letter-spacing: 0.28px;
+color: var(--title-text-color);
+ text-decoration: none;
+  
+ }
+ .nav-index,
+ .nav-portf{
+  color: var(--accent-color);
+  font-weight: 500;
+
+ }
+.nav:hover{
+   color:var(--accent-color);
+ }
+ .nav:focus{
+  color:var(--accent-color);
+ }
+
+ .contact{
+   color:var(--primary-text-color);
+   font-weight: 500;
+   letter-spacing: 0.28px;
+   text-decoration: none;
+ }
+
+ .contact:hover{
+   color:var(--accent-color);
+ }
+ .contact:focus {
+   color: var(--accent-color);
+ }
+ .hero{
+   color:#FFFFFf;
+   text-align: center;
+   font-size: 44px;
+   font-weight: 900;
+   line-height: 1.36;
+   letter-spacing: 2.64px;
+   text-transform: uppercase;
+   background-color: #2F303A;
+ }
+ .button-hero{
+   color: #FFF;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.87;
+      letter-spacing: 0.96px;
+         background: var(--accent-color);
+         cursor: pointer;
+ }
+ .description-title{
+     font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.42px;
+ }
+ .description{
+color: var(--primary-text-color);
+   line-height: 1,7;
+   letter-spacing: 0.42px;
+ 
+ }
+ .comand{
+
+    background-color:var(--second-accent-color);
+      font-size: 36px;
+    
+      letter-spacing: 1.08px;
+ }
+ .name{
+
+      
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.48px;
+ }
+ .prof{
+   color: var(--primary-text-color);
+      font-size: 16px;
+      letter-spacing: 0.48px;
+      text-decoration: none;
+ }
+ .adress{
+   color: #FFF;
+      line-height: 1.7;
+      letter-spacing: 0.42px;
+      font-style: normal;
+    
+ }
+ .webstudio{
+   text-decoration: none;
+ }
+ .radio-button{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  background-color: var(--second-accent-color);
+  font-family: inherit;
+}
+
+ .radio-button:hover{
+  color: #fff;
+  background-color: var(--accent-color);
+ }
+  .radio-button:focus {
+   color: #fff;
+  background-color: var(--accent-color);
+}
+
+ .signature{
+  text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    color: var(--title-text-color);
+    line-height: 0.5px;
+ }
+
+ ul{
+  list-style-type: none;
+ }
+ .contact-footer{
+  color: rgba(255, 255, 255, 0.60);
+  text-decoration: none ;
+  font-style: normal;
+
+ }
+ .contact-footer:hover,
+ .contact0footer:focus{
+  color: var(--accent-color);
+ }
+
+ .footer{
+  background-color: #2F303A;
+ 
+ }
+   .studio-footer{
+  color: #FFF;
+  font-family: raleway;
+  font-size: 26px;
+     letter-spacing: 0.78px;
+    font-weight: 700;
+ }  
+
+a{
+  text-decoration: none;
+}
+
