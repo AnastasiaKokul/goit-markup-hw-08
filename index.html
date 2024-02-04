@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modul01</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    "
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,35 +19,36 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a class="webstudio" href="index.html"
-          ><span class="web">Web</span><span class="studio">Studio</span></a
-        >
-        <ul>
-          <li><a class="nav-index" href="index.html">Студія </a></li>
-          <li><a class="nav" href="portfolio.html">Портфоліо </a></li>
-          <li><a class="nav" href="">Контакти </a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a class="contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+      <div class="container container-header">
+        <nav class="navigation">
+          <a class="webstudio-header" href="index.html"
+            ><span class="web">Web</span><span class="studio">Studio</span></a
           >
-        </li>
-        <li>
-          <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <ul class="navigation-header">
+            <li><a class="nav-index" href="index.html">Студія </a></li>
+            <li><a class="nav" href="portfolio.html">Портфоліо </a></li>
+            <li><a class="nav" href="">Контакти </a></li>
+          </ul>
+        </nav>
+        <ul class="contact-header">
+          <li>
+            <a class="contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
+      <section class="hero container">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="button-hero" type="button">Замовити послугу</button>
       </section>
-      <section>
-        <h2>description</h2>
-        <ul>
+      <section class="container">
+        <ul class="dscr">
           <li>
             <h3 class="description-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="description">
@@ -72,38 +78,42 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="subtitle">Чим ми займаємося</h2>
-        <ul>
-          <li><img src="./images/box_1.jpg" alt="tablet" width="370" /></li>
-          <li><img src="./images/box_2.jpg" alt="laptop" width="370" /></li>
-          <li>
+      <section class="container">
+        <h2 class="title">Чим ми займаємося</h2>
+        <ul class="info">
+          <li class="item">
+            <img src="./images/box_1.jpg" alt="tablet" width="370" />
+          </li>
+          <li class="item">
+            <img src="./images/box_2.jpg" alt="laptop" width="370" />
+          </li>
+          <li class="item">
             <img src="./images/box_3.jpg" alt="color laptop" width="370" />
           </li>
         </ul>
       </section>
-      <section class="comand">
-        <h2 class="comand">Наша команда</h2>
-        <ul>
-          <li>
+      <section class="comand container">
+        <h2 class="title">Наша команда</h2>
+        <ul class="team">
+          <li class="member">
             <img src="./images/img_igor.jpg" alt="Igor" width="270" />
 
             <h3 class="name">Ігор Дем'яненко</h3>
             <p class="prof">Product Designer</p>
           </li>
-          <li>
+          <li class="member">
             <img src="./images/img_olga.jpg" alt="Olga" width="270" />
 
             <h3 class="name">Ольга Рєпіна</h3>
             <p class="prof">Frontend Developer</p>
           </li>
-          <li>
+          <li class="member">
             <img src="./images/img_mykola.jpg" alt="Mykola" width="270" />
 
             <h3 class="name">Микола Тарасов</h3>
             <p class="prof">Marketing</p>
           </li>
-          <li>
+          <li class="member">
             <img src="./images/img_mychailo.jpg" alt="Mychailo" width="270" />
 
             <h3 class="name">Михайло Єрмаков</h3>
@@ -112,7 +122,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a class="webstudio" href="index.html "
         ><span class="web">Web</span
         ><span class="studio-footer">Studio</span></a
