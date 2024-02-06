@@ -166,9 +166,11 @@ header{
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 24px;
-    border: #2196F3;
-    margin-left: auto;
-    margin-right: auto;
+    border: none;
+    margin: auto;
+    display: block;
+ 
+    min-width: 216px;
  }
 
  /* descriotion */
@@ -207,6 +209,7 @@ width: 270px;
   display: flex;
   padding-left: 0px;
   margin-top: 0px;
+  margin-bottom: 0px;
 
 }
 
@@ -245,7 +248,7 @@ width: 270px;
   margin-top: 0px;
   text-align: center;
   background-color: #FFF;
-  border-bottom: 1px solid #757575;
+  border-bottom: 1px solid #ECECEC;
   border-radius: 4px;
  
 }
@@ -289,7 +292,7 @@ width: 270px;
   cursor: pointer;
   background-color: var(--second-accent-color);
   font-family: inherit;
-  border: #757575;
+  border: none;
   padding: 6px 22px;
   border-radius: 4px;
   margin:0px;
@@ -381,8 +384,9 @@ width: 270px;
 .item{
   margin-right: 30px;
   margin-bottom: 30px;
-  /* border: 1px solid #ECECEC;
-   */
+  border: 1px solid #ECECEC;
+  width: 370px;
+  
 }
 .item img{
   display: block;
