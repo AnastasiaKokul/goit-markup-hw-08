@@ -7,6 +7,12 @@
   --accent-color: #2196F3;
   --second-accent-color:#F5F4FA;
 }
+h1,h2,h3{
+  margin:0px
+}
+img{
+  display: block;
+}
 body{
    font-family: roboto, sans-serif;
    font-size: 14px;
@@ -47,7 +53,8 @@ header{
    font-family: raleway;
    font-size: 26px;
    letter-spacing: 0.78px;
-   font-weight: 700;}
+   font-weight: 700;
+  }
 
   .webstudio-header{
    text-decoration: none;
@@ -101,9 +108,11 @@ header{
  text-decoration: none;
  display: block;
  margin-right: 50px;
- padding-top: 32px;
- padding-bottom: 32px;
-
+ }
+ .nav a{
+padding-top: 32px;
+  padding-bottom: 32px;
+  display:inline-block;
  }
  .nav-index,
  .nav-portf{
@@ -182,6 +191,7 @@ header{
       font-weight: 700;
       letter-spacing: 0.42px;
  }
+ 
  .description{
 color: var(--primary-text-color);
    line-height: 1.7;
@@ -195,7 +205,7 @@ color: var(--primary-text-color);
     padding-left: 0px;
     margin-top: 0px; 
     margin-bottom: 0px;
-    padding-bottom: 94px;
+   
   }
   .dscr li{
 margin-right: 30px;
@@ -205,6 +215,10 @@ width: 270px;
     margin-right:0px;
   }
 /* info */
+.section-info{
+  padding-top: 0px;
+
+}
 .info{
   display: flex;
   padding-left: 0px;
@@ -242,6 +256,7 @@ width: 270px;
   display: flex;
   padding-left: 0px;
   margin-bottom: 0px;
+  margin-top: 0px;
  }
 .member{
   margin-right: 30px;
@@ -255,25 +270,22 @@ width: 270px;
 .member:last-child{
   margin-right: 0px;
 }
-.member img{
-  margin-bottom: 30px;
  
-}
  .name{     
       font-size: 16px;
       font-weight: 500;
       letter-spacing: 0.48px;
-      margin-bottom: 10px;
-      margin-top:0px;
-      
+      margin-bottom: 10px;  
  }
  .prof{
    color: var(--primary-text-color);
       font-size: 16px;
       letter-spacing: 0.48px;
       text-decoration: none;
-      margin-top: 0px;
-      margin-bottom: 30px;
+      margin: 0px;
+ }
+ .member-dscr{
+  padding: 30px 0px;
  }
  .adress{
    color: #FFF;
@@ -323,13 +335,9 @@ width: 270px;
     color: var(--title-text-color);
     line-height: 0.5px;
     margin: 0px;
-    margin-top: 20px;
     line-height: 2.0;
-    margin-left: 24px;
-
  }
 
- 
  .contact-footer{
   color: rgba(255, 255, 255, 0.60);
   text-decoration: none ;
@@ -384,13 +392,10 @@ width: 270px;
 .item{
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #ECECEC;
   width: 370px;
   
 }
-.item img{
-  display: block;
-}
+
 .item:nth-child(3n){
   margin-right: 0px;
 }
@@ -402,9 +407,13 @@ width: 270px;
  font-size: 16px;
  letter-spacing: 0.48px;
  text-decoration: none;
-
  margin-top: 4px;
  line-height: 2.0;
- margin-left: 24px;
- margin-bottom: 20px;
+ margin-bottom: 0px;
+
+}
+.item-dscr{
+  padding: 20px 24px;
+  border: #eee 1px solid;
+  border-top: none;
 }
