@@ -104,26 +104,27 @@ header{
  .nav{
  font-weight: 500;
  letter-spacing: 0.28px;
- color: var(--title-text-color);
  text-decoration: none;
  display: block;
  margin-right: 50px;
  }
- .nav a{
-padding-top: 32px;
-  padding-bottom: 32px;
-  display:inline-block;
- }
- .nav-index,
- .nav-portf{
+
+.nav .nav-index ,
+.nav .nav-portf {
   color: var(--accent-color);
   font-weight: 500;
-
  }
-.nav:hover{
+.nav a {
+ padding-top: 32px;
+ padding-bottom: 32px;
+ display: inline-block;
+ color: var(--title-text-color);
+ }
+
+.nav a:hover{
    color:var(--accent-color);
  }
- .nav:focus{
+ .nav a:focus{
   color:var(--accent-color);
  }
 
