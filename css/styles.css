@@ -527,6 +527,12 @@ fill:#afb1b8;
 .clients-link:hover{
   border: var(--accent-color) solid 1px;
 }
+.clients-link:focus .clients-icon{
+  fill: #2196F3;
+}
+.clients-link:focus{
+  border: var(--accent-color) solid 1px;
+}
 
 
 .welcome{
