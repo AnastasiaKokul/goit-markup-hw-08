@@ -166,6 +166,9 @@ header{
     padding-bottom: 200px;
     padding-top: 200px;
     background-image: linear-gradient(to bottom, rgba(47,48,58, 0.4), rgba(47,48,58,0.4)), url(../images/hero.jpg) ;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   
  }
  .hero-title{
@@ -460,6 +463,7 @@ width: 270px;
   justify-content: center;
   padding: 0px;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .socials-item:not(:last-child){
@@ -489,6 +493,7 @@ width: 270px;
   background-color: var(--accent-color);
 }
 .socials-link:focus{
+  outline: none;
   background-color: var(--accent-color);
 } 
 .clients{
@@ -531,7 +536,8 @@ fill:#afb1b8;
   fill: #2196F3;
 }
 .clients-link:focus{
-  border: var(--accent-color) solid 1px;
+  outline: none;
+  border: var(--accent-color) solid 3px;
 }
 
 
@@ -553,6 +559,7 @@ fill:#afb1b8;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  outline: none;
 }
  .socials-link-end:hover{
    background-color: var(--accent-color);
