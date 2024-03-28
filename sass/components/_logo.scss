@@ -1,0 +1,23 @@
+.webstudio__web {
+    color: var(--accent-color);
+    font-family: raleway;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    font-weight: 700;
+}
+
+.webstudio__studio{
+    color: black;
+    font-family: raleway;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    font-weight: 700;
+    &--white{
+        color: #FFF;
+    }
+}
+
+.webstudio {
+    text-decoration: none;
+    margin-right: 93px;
+}

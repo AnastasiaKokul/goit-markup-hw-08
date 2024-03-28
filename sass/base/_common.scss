@@ -1,0 +1,35 @@
+.img {
+    display: block;
+}
+body {
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 400;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &--without-padding-top {
+      padding-top: 0px; }
+    &--grey {
+      background-color: var(--second-accent-color); }
+     }
+
+ .section__title {
+     font-size: 36px;
+     text-align: center;
+     letter-spacing: 1.08px;
+     margin-top: 0px;
+     margin-bottom: 50px;
+ }
+.button {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    background: var(--accent-color);
+    cursor: pointer;
+    border-radius: 4px;
+}

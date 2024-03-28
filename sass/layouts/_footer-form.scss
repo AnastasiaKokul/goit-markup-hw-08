@@ -1,0 +1,45 @@
+.footer-form__label {
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: bold;
+}
+.footer-form__input {
+    width: 356px;
+    height: 50px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    color: #FFF;
+    font-size: 16px;
+    &::placeholder{
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+}
+.footer-form__button {
+    position: relative;
+    width: 198px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: var(--accent-color) solid 1px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 15%);
+    cursor: pointer;
+    padding-right: 28px;
+    padding-left: 28px;
+    text-align: left;
+    margin-left: 12px;
+}
+
+.footer-form__icon {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+
+}
