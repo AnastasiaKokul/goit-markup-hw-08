@@ -1,0 +1,111 @@
+.mobile-menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    top:0;
+    height: 100%;
+    padding: 48px 40px;
+    // margin-left: auto;
+    // margin-right: auto;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;}
+
+.is-open{
+    transform: translateX(0);
+}
+ .button-menu-close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0px;
+
+    border: none;
+    background-color: transparent;
+    margin:0px;
+    cursor: pointer;
+    &:hover .button-menu__close,
+    &:focus .button-menu__close{
+        fill: var(--accent-color); }
+}
+.mobile-menu__link{
+    font-size: 40px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    &--current{
+        color: var(--accent-color);
+    }
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+   
+}
+.mobile-menu__item:nth-child(2){
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.mobile-menu__list{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mob-contact-list__item{
+    margin-bottom: 32px;
+    &:nth-child(2){
+        margin-bottom: 64px;
+    }
+}
+.mob-contact-list__tel{
+    color: var(--accent-color);
+    font-size: 34px;
+    font-weight: 500;
+ 
+}
+.mob-contact-list__mail{
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+.mob-contact-list{
+    padding: 0px;
+    margin: 0px;
+
+}
+.mobile-socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.mobile-socials__item{
+    &:not(:last-child){
+    margin-right: 21px;
+}  
+}
+.mobile-socials__link{
+    position: relative;
+    color: var(--accent-color);
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 500;}
+.mobile-socials__link--after{
+    &::after{
+        content: "";
+        position: absolute;
+        right: -10px;
+        height: 22px;
+        background-color: var(--title-text-color);
+        opacity: 0.2;
+       
+        width: 1px;
+        display: inline-block;
+        // margin: 0px 10px;
+    
+    }
+}

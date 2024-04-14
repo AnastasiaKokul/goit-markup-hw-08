@@ -1,10 +1,15 @@
 .section-header {
     border-bottom: 1px solid #ECECEC;
+    // display: flex;
+    // justify-content: flex-end;
+
 }
 
 .header {
+    position: relative;
     display: flex;
-    align-items: center;
+    // align-items: center;
+    justify-content: space-between;
     margin-bottom: 0px;
 }
 
@@ -14,24 +19,54 @@
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
+    @media screen and (max-width:767px) {
+        display: none;}
 }
 
 .header__menu {
+    
     display: flex;
     align-items: center;
+    // justify-content: space-between;
+
 }
 
 .contact {
     display: flex;
     margin-left: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     padding-left: 0px;
     align-items: flex-end;
+    @media screen and (max-width:767px) {
+        display: none;}
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+    }
 }
 
 .contact__item {
-    margin-left: 40px;
+    margin: 0px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    &:last-child{
+    margin-left: 30px;}
+    @media screen and (min-width:768px) and (max-width:1199px) {
+    &:first-child{
+        margin-top: 21px;
+        margin-bottom: 10px;
+    }
+    &:last-child{
+        margin-bottom: 21px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    }
+    // margin-left: 40px;
 }
 
 .contact:first-child {
@@ -41,6 +76,12 @@
 .navigation-list:last-child {
     margin-right: 0px;
 }
+.navigation-list__item{
+    margin-right: 50px;
+       &:last-child{
+         margin-right: 0px;
+    }
+}
 
 .navigation-list__link {
     position: relative;
@@ -49,11 +90,12 @@
     letter-spacing: 0.28px;
     text-decoration: none;
     display: inline-block;
-    margin-right: 50px;
+   
     padding-bottom: 32px;
     padding-top: 32px;
     color: var(--title-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
     &:hover,
     &:focus{
         color: var(--accent-color);}
@@ -71,7 +113,7 @@
         background-color: var(--accent-color); }    
 }
 
-.contact__item {
+.contact__link {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -86,11 +128,33 @@
     &:focus .contact__icon{
         fill: var(--accent-color);
     }
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        font-size: 12px;
+    }
 }
 
 .contact__icon {
     fill: var(--primary-text-color);
-    margin-right: 10px;
+    margin-right: 8px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+}
+.button-menu {
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    margin:0px;
+    display: block;
+    cursor: pointer;
+    &:hover .button-menu__open,
+    &:focus .button-menu__open{
+        fill: var(--accent-color); }
+    
 }
 

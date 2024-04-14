@@ -4,6 +4,9 @@
     text-transform: uppercase;
     color: #FFF;
     font-weight: bold;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;}
 }
 .footer-form__input {
     width: 356px;
@@ -14,10 +17,19 @@
     padding-left: 16px;
     color: #FFF;
     font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    display: block;
     &::placeholder{
       font-size: 16px;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.6);}
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-right: 12px;
+        
     }
+    
 }
 .footer-form__button {
     position: relative;
@@ -34,7 +46,13 @@
     padding-right: 28px;
     padding-left: 28px;
     text-align: left;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    @media screen and (min-width:1200px) {
+        margin: 0px;
+        
+    }
 }
 
 .footer-form__icon {
@@ -42,4 +60,16 @@
     top: 13px;
     right: 25px;
 
+}
+.footer-form{
+    @media screen and (min-width:1200px) {
+      display: flex;
+      justify-content:flex-end;
+      align-items: flex-end;
+      margin-left: auto;
+      
+        
+        
+        
+    }
 }
