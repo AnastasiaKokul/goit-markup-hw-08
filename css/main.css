@@ -266,8 +266,7 @@ h3 {
 
 .modal-wrapper {
   position: absolute;
-  max-width: 450px;
-  max-height: 609px;
+  height: 609px;
   background-color: #FFF;
   border-radius: 4px;
   top: 50%;
@@ -282,10 +281,20 @@ h3 {
   transition: scale 300ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
+@media screen and (max-width: 767px) {
+  .modal-wrapper {
+    width: 94%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-wrapper {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
-    max-width: 528px;
-    max-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -569,6 +578,11 @@ h3 {
   fill: var(--accent-color);
 }
 
+.button-menu__open {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .right-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,7 +695,7 @@ h3 {
 }
 
 .footer-form__input {
-  width: 356px;
+  width: 100%;
   height: 50px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -714,8 +728,14 @@ h3 {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-form__input {
+    width: 358px;
     margin-bottom: 0px;
     margin-right: 12px;
   }
@@ -772,11 +792,17 @@ h3 {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.42px;
+  letter-spacing: 1.32px;
   color: var(--title-text-color);
   line-height: 0.5px;
   margin: 0px;
   line-height: 2;
+  text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .galery__title {
+    letter-spacing: 1.22px;
+  }
 }
 
 .galery {
@@ -832,6 +858,17 @@ h3 {
   border: #eee 1px solid;
   border-top: none;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .galery__description {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .galery__description {
+    max-width: 370px;
+    height: 113px;
+  }
+}
 
 .galery__link {
   display: block;
@@ -849,6 +886,12 @@ h3 {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   outline: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .galery__description--height {
+    height: 149px;
+  }
 }
 
 .galery img {
@@ -888,13 +931,14 @@ h3 {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: scroll;
 }
 
 .section-hero {
   background-color: #2F303A;
   padding-bottom: 118px;
   padding-top: 118px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -953,6 +997,13 @@ h3 {
     max-width: 360px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section-hero__title {
+    font-size: 44px;
+    max-width: 696px;
+    line-height: 1.4;
+  }
+}
 
 .button__hero {
   padding: 10px 24px;
@@ -960,6 +1011,11 @@ h3 {
   margin: auto;
   display: block;
   min-width: 200px;
+}
+@media screen and (min-width: 1200px) {
+  .button__hero {
+    padding: 10px 32px;
+  }
 }
 
 .filter {
@@ -1031,7 +1087,7 @@ h3 {
 .form__input {
   display: block;
   position: relative;
-  width: 370px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1087,7 +1143,7 @@ h3 {
 
 .form__coment {
   height: 120px;
-  width: 370px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
@@ -1158,7 +1214,13 @@ h3 {
 
 .check__label {
   color: var(--primary-text-color);
-  font-size: 12px;
+  font-size: 13px;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .check__label {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .check__label {
@@ -1446,8 +1508,8 @@ h3 {
   height: 100%;
   padding: 48px 40px;
   background-color: white;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -1471,6 +1533,11 @@ h3 {
 }
 .button-menu-close:hover .button-menu__close, .button-menu-close:focus .button-menu__close {
   fill: var(--accent-color);
+}
+
+.button-menu__close {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu__link {

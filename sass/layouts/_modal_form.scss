@@ -1,7 +1,8 @@
 .form__input {
     display: block;
     position: relative;
-    width: 370px;
+    width: 100%;
+    // width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -49,7 +50,8 @@
 
 .form__coment {
     height: 120px;
-    width: 370px;
+    width: 100%;
+    // width: 370px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-top: 4px;
@@ -92,7 +94,11 @@
 }
 .check__label {
     color: var(--primary-text-color);
-    font-size: 12px;
+    font-size: 13px;
+    text-align: right;
+    @media screen and (min-width:768px) {
+        font-size: 12px;
+    }
     @media screen and (min-width:1200px) {
         font-size: 14px;
         

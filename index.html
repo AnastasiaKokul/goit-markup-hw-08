@@ -20,7 +20,6 @@
     <!--Шапка сайту-->
     <header class="section-header">
       <div class="container header">
-       
         <nav class="header__menu">
           <a class="webstudio webstudio--header" href="index.html"
             ><span class="webstudio__web">Web</span
@@ -48,58 +47,94 @@
           <li class="contact__item">
             <a class="contact__link" href="mailto:info@devstudio.com"
               ><svg class="contact__icon" width="18px" height="16px">
-                <use href="./images/sprite.svg#icon-envelope"></use></svg  >info@devstudio.com</a
+                <use href="./images/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li class="contact__item">
             <a class="contact__link" href="tel:+380961111111"
               ><svg class="contact__icon" width="10px" height="16px">
-                <use href="./images/sprite.svg#icon-smartphonetel1"></use></svg  >+38 096 111 11 11</a
+                <use href="./images/sprite.svg#icon-smartphonetel1"></use></svg
+              >+38 096 111 11 11</a
             >
           </li>
         </ul>
-        <button type="button" class="button-menu js-open-menu" aria-expanded="false"  >
+        <button
+          type="button"
+          class="button-menu js-open-menu"
+          aria-expanded="false"
+        >
           <svg class="button-menu__icon" width="40px" height="40px">
             <use
               class="button-menu__open"
               href="./images/sprite.svg#menu"
-            ></use> </svg>
+            ></use>
+          </svg>
         </button>
       </div>
-      <div class="mobile-menu-container js-menu-container" >
-        <button type="button" class="button-menu-close js-close-menu"><svg class="button-menu__close" width="40px" height="40px">
-          <use href="./images/sprite.svg#menu-close" ></use></svg></button>
-        <nav class="mobile-menu" >
+      <div class="mobile-menu-container js-menu-container">
+        <button type="button" class="button-menu-close js-close-menu">
+          <svg class="button-menu__close" width="40px" height="40px">
+            <use href="./images/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu">
           <ul class="mobile-menu__list">
-            <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--current" href="index.html">Студія</a>
+            <li class="mobile-menu__item">
+              <a
+                class="mobile-menu__link mobile-menu__link--current"
+                href="index.html"
+                >Студія</a
+              >
             </li>
-            <li class="mobile-menu__item"><a class="mobile-menu__link" href="portfolio.html">Портфоліо</a>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="portfolio.html">Портфоліо</a>
             </li>
-            <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакти </a>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="">Контакти </a>
             </li>
           </ul>
         </nav>
-        <div >
-        <ul class="mob-contact-list" >
-          <li class="mob-contact-list__item"><a class="mob-contact-list__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-          <li class="mob-contact-list__item"><a class="mob-contact-list__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-        <ul class="mobile-socials">
-          <li class="mobile-socials__item"><a class="mobile-socials__link mobile-socials__link--after">Instagram</a></li>
-          <li class="mobile-socials__item"><a class="mobile-socials__link mobile-socials__link--after">Twitter</a></li>
-          <li class="mobile-socials__item"><a class="mobile-socials__link mobile-socials__link--after">Facebook</a></li>
-          <li class="mobile-socials__item"><a class="mobile-socials__link">LinkedIn</a></li>
-          
-
-        </ul>
+        <div>
+          <ul class="mob-contact-list">
+            <li class="mob-contact-list__item">
+              <a class="mob-contact-list__tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contact-list__item">
+              <a class="mob-contact-list__mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link mobile-socials__link--after"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link mobile-socials__link--after"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link mobile-socials__link--after"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
-       
     </header>
 
     <main>
       <!--HERO-->
-       <section class="section section-hero">
+      <section class="section section-hero">
         <div class="container">
           <h1 class="section-hero__title">
             Ефективні рішення для вашого бізнесу
@@ -108,7 +143,7 @@
             Замовити послугу
           </button>
           <!-- Модальне вікно -->
-       <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal-wrapper">
               <button class="modal-wrapper__close-button" data-modal-close>
                 <svg
@@ -122,7 +157,7 @@
                     d="M11 1.108 9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108Z"
                   />
                 </svg>
-              </button> 
+              </button>
 
               <form class="form">
                 <strong class="form__title"
@@ -131,13 +166,42 @@
                 <label class="form__label">
                   <span class="form__name">Ім'я</span>
                   <input class="form__input" type="text" name="user-name" />
-                  <svg class="form__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><g clip-path="url(#a)"><path d="M9 9a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.003 0-6 1.005-6 3v.75c0 .412.337.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z"/></g><defs><clipPath id="a"><path fill="#212121" d="M0 0h18v18H0z"/></clipPath></defs></svg>
+                  <svg
+                    class="form__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="none"
+                  >
+                    <g clip-path="url(#a)">
+                      <path
+                        d="M9 9a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.003 0-6 1.005-6 3v.75c0 .412.337.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#212121" d="M0 0h18v18H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                 </label>
                 <label class="form__label">
                   <span class="form__name">Телефон</span>
                   <input class="form__input" type="tel" name="user-tel" />
-                  <svg class="form__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><g clip-path="url(#a)"><path  d="m13.996 11.123-1.838-.21a1.44 1.44 0 0 0-1.187.412l-1.332 1.332a10.888 10.888 0 0 1-4.769-4.77L6.21 6.55a1.44 1.44 0 0 0 .412-1.187l-.21-1.824a1.448 1.448 0 0 0-1.44-1.28H3.72c-.818 0-1.498.68-1.448 1.497.384 6.18 5.327 11.116 11.5 11.5.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.432Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v18H0z"/></clipPath></defs></svg>
-                    
+                  <svg
+                    class="form__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="none"
+                  >
+                    <g clip-path="url(#a)">
+                      <path
+                        d="m13.996 11.123-1.838-.21a1.44 1.44 0 0 0-1.187.412l-1.332 1.332a10.888 10.888 0 0 1-4.769-4.77L6.21 6.55a1.44 1.44 0 0 0 .412-1.187l-.21-1.824a1.448 1.448 0 0 0-1.44-1.28H3.72c-.818 0-1.498.68-1.448 1.497.384 6.18 5.327 11.116 11.5 11.5.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.432Z"
+                      />
+                    </g>
+                    <defs><path fill="#fff" d="M0 0h18v18H0z" /></defs>
+                  </svg>
                 </label>
                 <label class="form__label">
                   <span class="form__name">Пошта</span>
@@ -165,10 +229,22 @@
                     name="agree"
                     id="check"
                   />
-                  <span class="check__custom"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z" fill="white" stroke="white" stroke-width="0.2"/>
+                  <span class="check__custom"
+                    ><svg
+                      width="13"
+                      height="10"
+                      viewBox="0 0 13 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z"
+                        fill="white"
+                        stroke="white"
+                        stroke-width="0.2"
+                      />
                     </svg>
-                    </span>
+                  </span>
                   <span class="check__label"
                     >Погоджуюся з розсилкою та приймаю
                     <a class="check__agree-link" href=""
@@ -182,7 +258,7 @@
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <!--ПЕРЕВАГИ-->
       <section class="section">
@@ -247,7 +323,10 @@
               <div class="thumb">
                 <img
                   class="thumb__img"
-                  srcset="./images/offers/box_1.jpg 1x, ./images/offers/img@2x.jpg 2x"
+                  srcset="
+                    ./images/offers/box_1.jpg  1x,
+                    ./images/offers/img@2x.jpg 2x
+                  "
                   src="./images/offers/box_1.jpg"
                   alt="tablet"
                   width="370"
@@ -259,7 +338,10 @@
               <div class="thumb">
                 <img
                   class="thumb__img"
-                  srcset="./images/offers/box_2.jpg 1x, ./images/offers/img@2x-1.jpg 2x"
+                  srcset="
+                    ./images/offers/box_2.jpg    1x,
+                    ./images/offers/img@2x-1.jpg 2x
+                  "
                   src="./images/offers/box_2.jpg"
                   alt="laptop"
                   width="370"
@@ -271,7 +353,10 @@
               <div class="thumb">
                 <img
                   class="thumb__img"
-                  srcset="./images/offers/box_3.jpg 1x, ./images/offers/img@2x-2.jpg 2x"
+                  srcset="
+                    ./images/offers/box_3.jpg    1x,
+                    ./images/offers/img@2x-2.jpg 2x
+                  "
                   src="./images/offers/box_3.jpg"
                   alt="color laptop"
                   width="370"
@@ -289,16 +374,31 @@
           <ul class="team">
             <li class="member">
               <picture>
-             <source media="(max-width: 767px)"
-             srcset="./images/comand/imgsm.jpg 1x, ./images/comand/imgsm@2.jpg 2x" 
-             type="image/jpg"/>
-             <source media="(min-width: 768px)"
-             srcset="./images/comand/imgmd.jpg 1x, ./images/comand/imgmd@2x.jpg 2x" 
-             type="image/jpg"/>
-             <source media="(min-width: 1200px)"
-             srcset="./images/comand/imglg.jpg 1x, ./images/comand/imglg@2x.jpg 2x" 
-             type="image/jpg"/>
-              <img src="./images/comand/imgsm.jpg" alt="Igor"/>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/comand/imgsm.jpg   1x,
+                    ./images/comand/imgsm@2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/comand/imgmd.jpg    1x,
+                    ./images/comand/imgmd@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/comand/imglg.jpg    1x,
+                    ./images/comand/imglg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img src="./images/comand/imgsm.jpg" alt="Igor" />
               </picture>
               <div class="member__description">
                 <h3 class="member__name">Ігор Дем'яненко</h3>
@@ -365,16 +465,29 @@
             </li>
             <li class="member">
               <picture>
-                <source media="(max-width: 767px)"
-                srcset="./images/comand/imgsm-1.jpg 1x, ./images/comand/imgsm@2-1.jpg 2x" 
-                type="image/jpg"/>
-                <source media="(min-width: 768px)"
-                srcset="./images/comand/imgmd-1.jpg 1x, ./images/comand/imgmd@2x-1.jpg 2x" 
-                type="image/jpg"/>
-                <source media="(min-width: 1200px)"
-                srcset="./images/comand/imglg-1.jpg 1x, ./images/comand/imglg@2x-1.jpg 2x" 
-                type="image/jpg"/>
-                 <img src="./images/comand/imgsm-1.jpg" alt="Olga"/>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/comand/imgsm-1.jpg   1x,
+                    ./images/comand/imgsm@2-1.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/comand/imgmd-1.jpg    1x,
+                    ./images/comand/imgmd@2x-1.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/comand/imglg-1.jpg    1x,
+                    ./images/comand/imglg@2x-1.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img src="./images/comand/imgsm-1.jpg" alt="Olga"
+              /></picture>
               <div class="member__description">
                 <h3 class="member__name">Ольга Рєпіна</h3>
                 <p class="member__profession">Frontend Developer</p>
@@ -440,16 +553,29 @@
             </li>
             <li class="member">
               <picture>
-                <source media="(max-width: 767px)"
-                srcset="./images/comand/imgsm-2.jpg 1x, ./images/comand/imgsm@2-2.jpg 2x" 
-                type="image/jpg"/>
-                <source media="(min-width: 768px)"
-                srcset="./images/comand/imgmd-2.jpg 1x, ./images/comand/imgmd@2x-2.jpg 2x" 
-                type="image/jpg"/>
-                <source media="(min-width: 1200px)"
-                srcset="./images/comand/imglg-2.jpg 1x, ./images/comand/imglg@2x-2.jpg 2x" 
-                type="image/jpg"/>
-                 <img src="./images/comand/imgsm-2.jpg" alt="Mykola"/>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/comand/imgsm-2.jpg   1x,
+                    ./images/comand/imgsm@2-2.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/comand/imgmd-2.jpg    1x,
+                    ./images/comand/imgmd@2x-2.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/comand/imglg-2.jpg    1x,
+                    ./images/comand/imglg@2x-2.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img src="./images/comand/imgsm-2.jpg" alt="Mykola"
+              /></picture>
               <div class="member__description">
                 <h3 class="member__name">Микола Тарасов</h3>
                 <p class="member__profession">Marketing</p>
@@ -515,16 +641,29 @@
             </li>
             <li class="member">
               <picture>
-                <source media="(max-width: 767px)"
-                srcset="./images/comand/imgsm-3.jpg 1x, ./images/comand/imgsm@2-3.jpg 2x" 
-                type="image/jpg"/>
-                <source media="(min-width: 768px)"
-                srcset="./images/comand/imgmd-3.jpg 1x, ./images/comand/imgmd@2x-3.jpg 2x" 
-                type="image/jpg"/>
-                <source media="(min-width: 1200px)"
-                srcset="./images/comand/imglg-3.jpg 1x, ./images/comand/imglg@2x-3.jpg 2x" 
-                type="image/jpg"/>
-                 <img src="./images/comand/imgsm-3.jpg" alt="Mychailo"/>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/comand/imgsm-3.jpg   1x,
+                    ./images/comand/imgsm@2-3.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/comand/imgmd-3.jpg    1x,
+                    ./images/comand/imgmd@2x-3.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/comand/imglg-3.jpg    1x,
+                    ./images/comand/imglg@2x-3.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img src="./images/comand/imgsm-3.jpg" alt="Mychailo"
+              /></picture>
               <div class="member__description">
                 <h3 class="member__name">Михайло Єрмаков</h3>
                 <p class="member__profession">UI Designer</p>
