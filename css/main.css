@@ -931,7 +931,11 @@ h3 {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: scroll;
+}
+@media screen and (max-width: 767px) {
+  .galery__animation {
+    overflow: scroll;
+  }
 }
 
 .section-hero {
